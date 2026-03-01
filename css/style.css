@@ -1,13 +1,16 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    padding-left: 20px;
     padding-right: 20px;
-    height: 50px;
+    height: 80px;
     background: black;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,8 +26,38 @@ header a {
 
 main {
     color: #09f;
+    display: flex;
 }
 
+.contenedor_imagen {
+    
+
+    /* 1. Ruta de tu imagen y capa oscura para que el texto resalte */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('../img/photos/foto_fondo.jpg');
+
+    /* 2. Ajustes vitales para que la imagen se vea bien */
+    background-size: cover;       /* Ajusta la imagen al espacio sin deformarla */
+    background-position: center;  /* Centra la foto */
+    background-repeat: no-repeat; /* Evita que la imagen se duplique si el div es grande */
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedor_imagen h1{
+    font-size: 4rem;
+    padding: 0;
+    margin:0;
+}
+.contenedor_imagen h2{
+    font-size: 2rem;
+    padding: 0; 
+}
 footer {
     position: absolute;
     bottom:0;
