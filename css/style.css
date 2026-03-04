@@ -5,9 +5,11 @@ body {
 }
 
 header {
+    box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
     height: 80px;
+    width: 100%;
     background: black;
     display: flex;
     justify-content: space-between;
@@ -43,7 +45,7 @@ main {
     background-position: center;  /* Centra la foto */
     background-repeat: no-repeat; /* Evita que la imagen se duplique si el div es grande */
     height: 400px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +116,7 @@ footer {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: lightgrey;
     height: 60px;
-    width: 100vw;
+    width: 100%;
     background: rgb(42, 42, 42);
 
     display: flex;
@@ -174,6 +176,15 @@ footer {
     height: 120px;
 }
 
+.skillImg:last-child {
+    gap: 100px;
+    padding-left: 20px;
+}
+
+.skillImg:nth-child(2) {
+    gap: 100px;
+}
+
 .skillText {
     background-color: #f9f9f9;
     border-radius: 12px;
@@ -184,6 +195,3 @@ footer {
     flex-direction: column;
 }
 
-#skills:nth-child(3) {
-    align-self: flex-end;
-}
