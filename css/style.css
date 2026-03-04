@@ -146,20 +146,44 @@ footer {
 
 #skills {
     margin: 0;
-    background: red;
+    background: rgb(208, 208, 208);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 90px;
 }
+
 .skillContainer {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.skillImg {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    gap: 40px;
+}
+
+.skillImg img {
+    width: 120px;
+    height: 120px;
+}
+
+.skillText {
     background-color: #f9f9f9;
     border-radius: 12px;
     padding: 50px;
     width: 700px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-.skillContainer:nth-child(3) {
+#skills:nth-child(3) {
     align-self: flex-end;
 }
