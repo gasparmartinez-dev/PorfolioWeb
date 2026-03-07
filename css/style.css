@@ -6,11 +6,11 @@ body {
 
 header {
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 80px;
     width: 100%;
-    background: black;
+    background: #4A5C6A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,14 +18,24 @@ header {
 
 .enlacesHeader{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     position: relative;
     padding-right: 80px;
 }
 
 header a {
-    position: relative;
-    color: white;
+    color: #CCD0CF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    text-decoration: none;
+}
+
+header a button {
+    color: #CCD0CF;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #CCD0CF;
+    background: #4A5C6A;
+    border-radius: 8px;
 }
 
 main {
@@ -44,7 +54,7 @@ main {
     background-size: cover;       /* Ajusta la imagen al espacio sin deformarla */
     background-position: center;  /* Centra la foto */
     background-repeat: no-repeat; /* Evita que la imagen se duplique si el div es grande */
-    height: 400px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -95,18 +105,27 @@ main {
 }
 
 main section {
-    background: rgb(195, 195, 195);
-    padding: 40px 70px 40px 70px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    background: #11212D;
+    padding: 60px 200px 60px 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+main section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #F2E3D5;
 }
 main section h3 {
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: 900;
+    color: #F2E3D5;
 }
 
 main section p {
-    font-size: 30px;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
 }
 
 footer {
@@ -117,7 +136,7 @@ footer {
     color: lightgrey;
     height: 60px;
     width: 100%;
-    background: rgb(42, 42, 42);
+    background: #06141B;
 
     display: flex;
     justify-content: center;
@@ -146,20 +165,43 @@ footer {
     }
 }
 
+#presentacion p {
+    font-size: 22px;
+}
+
 #skills {
-    margin: 0;
-    background: rgb(208, 208, 208);
+    background: #1f2d37;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 90px;
 }
 
+#skills h1 {
+    margin-bottom: 0px;
+}
+
 .skillContainer {
     width: 100%;
     display:flex;
     flex-direction: row;
+    padding: 0px;
 }
+
+
+
+.skillText h2 {
+    margin-top: 0;
+    font-size: 30px; 
+    font-family: 'Poppins', sans-serif;
+    color: lightgrey;
+}
+.skillText p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+}
+
 
 .skillImg {
     background: transparent;
@@ -168,30 +210,59 @@ footer {
     justify-content: center;
     align-items: center;
     width: 700px;
-    gap: 40px;
+    gap: 80px;
 }
+
+/* Busca el primer contenedor de habilidades y luego su ÚLTIMO hijo (que es el div de imágenes) */
+.skillContainer:first-of-type .skillImg {
+    gap: 50px;
+}
+
+
+
+
 
 .skillImg img {
     width: 120px;
     height: 120px;
 }
 
-.skillImg:last-child {
-    gap: 100px;
-    padding-left: 20px;
-}
-
-.skillImg:nth-child(2) {
-    gap: 100px;
-}
-
 .skillText {
-    background-color: #f9f9f9;
+    border: 1px solid lightgrey;
+    background-color: #253745;
     border-radius: 12px;
-    padding: 50px;
+    padding: 35px;
     width: 700px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    margin-right: 30px;
 }
 
+.objContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.objetivo {
+    border: 1px solid lightgrey;
+    background: #253745;
+    padding: 20px;
+    padding-top: 0px;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.objetivo h3 {
+    font-size: 30px; 
+    font-family: 'Poppins', sans-serif;
+    color: lightgrey;
+}
+
+.objetivo p {
+    font-size: 20px;
+}
