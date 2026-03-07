@@ -4,35 +4,6 @@ body {
     flex-direction: column;
 }
 
-header {
-    box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 80px;
-    width: 100%;
-    background: #4A5C6A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header a {
-    color: #CCD0CF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400px;
-    text-decoration: none;
-}
-
-header a button {
-    color: #CCD0CF;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid #CCD0CF;
-    background: #4A5C6A;
-    border-radius: 8px;
-}
-
-
-
 main {
     background: #11212D;
     display: flex;
@@ -152,18 +123,4 @@ input {
     background: #253745;
     color: white;
     border: 1px solid rgb(123, 123, 123);
-}
-
-footer {
-    position: relative;
-    bottom:0;
-    left:0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: lightgrey;
-    height: 60px;
-    width: 100%;
-    background: #06141B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
