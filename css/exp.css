@@ -1,0 +1,106 @@
+header {
+    z-index: 10;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background: #11212D;
+    padding: 80px 150px 80px 150px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #CCD0CF;
+    font-size: 48px;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+ul::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: lightgrey;
+    z-index: 0;
+}
+
+li {
+    padding: 25px 30px 10px 30px;
+    background: #1f2d37;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+
+    width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+li:nth-child(odd) {
+    align-self: flex-start;
+}
+
+li:nth-child(even) {
+    align-self: flex-end;
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  background: #1f2d37; /* Color de fondo de tu card */
+  border: 2px solid lightgrey;
+  border-radius: 50%; /* Esto lo hace redondo */
+  z-index: 2;
+}
+
+/* Posicionamiento para que el círculo caiga JUSTO sobre la línea central */
+li:nth-child(odd)::after {
+  right: -12.9% ; /* Ajusta este % según el ancho de tu card */
+}
+
+li:nth-child(even)::after {
+  left: -12.9% ;
+}
+
+li h2 {
+    font-size: 24px;
+    color: #CCD0CF;
+    margin-bottom: 0;
+    box-sizing: content-box;
+}
+
+li span {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 0;
+    margin-top: 0;
+    box-sizing: content-box;
+}
+
+li p {
+    font-size: 18px;
+    color: white;
+    margin-top: 0;
+}

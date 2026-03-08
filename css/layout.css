@@ -34,6 +34,7 @@ header button {
     font-size: 15px;
     border: 1px solid #CCD0CF;
     border-radius: 10px;
+    transition-duration: 0.6s;
 }
 
 header a:hover {
@@ -70,7 +71,7 @@ header {
 }
 
 header a button:hover{
-    scale: 1.2;
+    scale: 1.01;
 }
 
 footer {
