@@ -27,6 +27,11 @@ header a {
     transition-timing-function: ease-in;
 }
 
+header a img {
+    height: 55px;
+    width: auto;
+}
+
 header button {
     background: #4A5C6A;
     color: #CCD0CF;
