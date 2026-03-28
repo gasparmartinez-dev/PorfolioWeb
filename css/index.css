@@ -274,7 +274,7 @@ main section p {
         padding: 10px 40px 10px 40px;
     }
     .presentacion{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     main section h3 {
         font-size: 30px;
@@ -282,12 +282,20 @@ main section p {
     }
     main section p {
         font-size: 14px;
+        margin-top: 0px;
     }
     #miFoto{
         align-self: center;
         width: 200px;
         height: auto;
-        margin-bottom: 50px;
+        margin-top: 25px;
     }      
+    .disponible {
+        width: 190px;
+        height: 25px;
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
     
 }
