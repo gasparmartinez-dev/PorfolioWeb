@@ -33,7 +33,7 @@ main {
 }
 
 .contenedor_imagen h1{
-    font-size: 4rem;
+    font-size: 60px;
     padding: 0;
     margin:0;
 
@@ -44,7 +44,7 @@ main {
     animation-delay: 1s;
 }
 .contenedor_imagen h2{
-    font-size: 2rem;
+    font-size: 40px;
     padding: 0; 
 
     animation-name: entradaDerecha;
@@ -256,4 +256,38 @@ main section p {
 
 .objetivo p {
     font-size: 20px;
+}
+
+
+@media (max-width: 767px){
+    .contenedor_imagen {
+        height: 400px;
+    }
+    .contenedor_imagen h1 {
+        font-size: 28px;
+    }
+    .contenedor_imagen h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    main section{
+        padding: 10px 40px 10px 40px;
+    }
+    .presentacion{
+        flex-direction: column;
+    }
+    main section h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    main section p {
+        font-size: 14px;
+    }
+    #miFoto{
+        align-self: center;
+        width: 200px;
+        height: auto;
+        margin-bottom: 50px;
+    }      
+    
 }
