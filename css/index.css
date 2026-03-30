@@ -159,106 +159,6 @@ main section p {
     font-size: 22px;
 }
 
-#skills {
-    background: #1f2d37;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 90px;
-}
-
-#skills h1 {
-    margin-bottom: 0px;
-}
-
-.skillContainer {
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    padding: 0px;
-}
-
-
-
-.skillText h2 {
-    margin-top: 0;
-    font-size: 30px; 
-    font-family: 'Poppins', sans-serif;
-    color: lightgrey;
-}
-.skillText p {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 0px;
-    font-weight: 500;
-}
-
-
-.skillImg {
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-    gap: 80px;
-}
-
-/* Busca el primer contenedor de habilidades y luego su ÚLTIMO hijo (que es el div de imágenes) */
-.skillContainer:first-of-type .skillImg {
-    gap: 50px;
-}
-
-
-
-
-
-.skillImg img {
-    width: 120px;
-    height: 120px;
-}
-
-.skillText {
-    border: 1px solid lightgrey;
-    background-color: #253745;
-    border-radius: 12px;
-    padding: 35px;
-    width: 700px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-}
-
-.objContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 50px;
-}
-
-.objetivo {
-    border: 1px solid lightgrey;
-    background: #253745;
-    padding: 20px;
-    padding-top: 0px;
-    width: 350px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.objetivo h3 {
-    font-size: 30px; 
-    font-family: 'Poppins', sans-serif;
-    color: lightgrey;
-}
-
-.objetivo p {
-    font-size: 20px;
-}
-
-
 @media (max-width: 767px){
     .contenedor_imagen {
         height: 400px;
@@ -274,7 +174,7 @@ main section p {
         padding: 10px 40px 10px 40px;
     }
     .presentacion{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     main section h3 {
         font-size: 30px;
@@ -288,7 +188,7 @@ main section p {
         align-self: center;
         width: 200px;
         height: auto;
-        margin-top: 25px;
+        margin-bottom: 20px;
     }      
     .disponible {
         width: 190px;
@@ -296,6 +196,7 @@ main section p {
         padding-left: 10px;
         font-size: 12px;
         font-weight: 500;
+        margin-bottom: 20px;
     }
     
 }

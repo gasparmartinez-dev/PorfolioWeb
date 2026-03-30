@@ -15,11 +15,13 @@ main {
 
 h1 {
     margin-top: 0;
+    font-size: 34px;
     margin-bottom: 0;
     color: #F2E3D5;
 }
 
 h2 {
+    font-size: 20px;
     margin-top: 0;
     color: #F2E3D5;
 }
@@ -55,15 +57,9 @@ section div img {
     height: 30px;
 }
 
-img {
+#imgContacto {
     width: auto;
     height: 400px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .contact-form {
@@ -111,6 +107,7 @@ input {
 }
 
 .submit-btn {
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
     height: 35px;
@@ -123,4 +120,42 @@ input {
     background: #253745;
     color: white;
     border: 1px solid rgb(123, 123, 123);
+}
+
+
+@media (max-width: 767px){
+    #imgContacto {
+        display: none;
+    }
+    main {
+        padding: 30px 40px 30px 40px;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .contact-container{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    span {
+        font-size: 12px;
+        font-weight: 500;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 30px;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit-btn{
+        margin-bottom: 40px;
+    }
 }

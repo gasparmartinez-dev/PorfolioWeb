@@ -42,6 +42,7 @@ header a {
 header a img {
     height: 55px;
     width: auto;
+    padding-top:3px;
 }
 
 header button {
