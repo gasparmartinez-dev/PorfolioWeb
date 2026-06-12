@@ -20,7 +20,6 @@ header{
 
     font-family: 'Inter', sans-serif;
 
-    position: fixed;
 }
 
 #nombre{
@@ -90,4 +89,27 @@ footer span{
 .social-icon:hover {
     color: #E8703A;
     fill: #E8703A;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 40px;
+}
+
+.section1{
+    background: #0D0D0B;
+}
+
+h1{
+    font-size: 14px;
+    color: #E8703A;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,0 +1,62 @@
+a{
+    font-family: 'Inter', sans-serif;
+}
+
+.icono_link{
+    width: 15px;
+    height: auto;
+}
+
+.frase{
+    font-family: 'Inter', sans-serif;
+    font-size: 60px;
+}
+
+span{
+    color: lightgrey;
+    line-height: 1.05;
+    font-weight: 200;
+    letter-spacing: -0.03 rem;
+}
+.frase1{
+    color: #E6E0D6;
+}
+.frase2{
+    color: #8A8478;
+}
+
+#inicio_navs{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#proyectos_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+
+    color: #0D0D0B;
+
+    background: #E8703A;
+
+    padding: 12px 24px 12px 24px;
+}
+
+#contacto_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+
+    color: #80807e;
+
+
+    padding: 12px 24px 12px 24px;
+}
