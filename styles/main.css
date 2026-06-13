@@ -173,3 +173,75 @@ form button{
     font-size: 14px;
     font-weight: 500;
 }
+
+
+.skills_container{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.skills_sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: #80807e;
+}
+
+.skills_sidebar{
+    h4{
+        margin-bottom: 12px;
+        margin-top: 0;
+    }
+    span{
+        font-size: 14px;
+        color: #80807e;
+    }
+}
+
+.skills_opcion{
+    padding: 10px;
+    border-radius: 4px;
+
+    transition: all 0.6s ease;
+}
+
+.skills_opcion.active{
+    background: #31312e;
+    border-left: 3px solid #E8703A;
+}
+
+.grid_skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 105px 105px;
+
+    width: 80%;
+
+    border: 1px solid #484847;
+    border-radius: 4px;
+}
+
+.skill_card{
+    border: 1px solid #484847;
+    padding: 30px;
+    padding-left: 40px;
+
+    h5{
+        margin: 0;
+        margin-bottom: 10px;
+        color: #E6E0D6;
+        font-size: 16px;
+    }
+    span{
+        color: #E8703A;
+        font-size: 12px;
+    }
+}
+
+
